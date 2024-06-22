@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Squares</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            position: relative;
+        }
+        .square {
+            width: 15cm;
+            height: 15cm;
+            background-color: white;
+            position: absolute;
+        }
+        .found {
+            background-color: red;
+        }
+        .counter {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .win-message,
+        .lose-message {
+            margin-top: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            font-weight: bold;
+            display: none;
+        }
+        .toggle-btn {
+            position: absolute;
+            bottom: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+        .button-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .button-container button {
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="counter">Found: 0/1</div>
+    <div class="win-message">You win!</div>
+    <div class="lose-message">You lose!</div>
+    <div class="button-container">
+        <button id="ChangeColorButton">Change Color</button>
+        <button id="restart">Restart</button>
+    </div>
+    <script src="Game_script2.js"></script>
+</body>
+</html>
